@@ -1,7 +1,7 @@
 # The AI Agents Repository
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 Welcome to the definitive map for navigating the autonomous agent ecosystem in 2026. As artificial intelligence transitions from conversational patterns to structural autonomy, the necessity for robust, scalable, and secure agentic architectures has never been clearer. This index aggregates the most advanced frameworks, offensive security agents, OSINT digesters, and enterprise deployment tools currently defining the state of the art.
