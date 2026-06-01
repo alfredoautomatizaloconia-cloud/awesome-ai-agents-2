@@ -301,7 +301,7 @@ Frameworks and pipelines optimized for low-latency voice-to-voice communication,
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Pipecat** | Open-source framework for building voice and multimodal conversational agents featuring WebRTC bindings and streaming VAD. | Python/TS | API-based | Web/Node | [Link](https://github.com/pipecat-ai/pipecat) |
 | **LiveKit Agents** | High-performance infrastructure explicitly designed to host real-time programmable audio agents over globally distributed WebRTC meshes. | Go/Python | API-based | SDK | [Link](https://github.com/livekit/agents) |
-| **Vapi** | End-to-end voice AI platform abstraction allowing integration of interrupting, context-aware audio agents natively via SIP/WebRTC. | TypeScript | API-based | Web/App | [Link](https://github.com/vapi-ai) |
+| **Vapi** | End-to-end voice AI platform abstraction allowing integration of interrupting, context-aware audio agents natively via SIP/WebRTC. | TypeScript | API-based | Web/App | [Link](https://github.com/VapiAI) |
 
 ---
 
