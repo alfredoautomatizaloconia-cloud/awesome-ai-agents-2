@@ -8,10 +8,10 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-Welcome to the definitive map for navigating the autonomous agent ecosystem in 2026. As artificial intelligence transitions from conversational patterns to structural autonomy, the necessity for robust, scalable, and secure agentic architectures has never been clearer. This index aggregates the most advanced frameworks, offensive security agents, OSINT digesters, and enterprise deployment tools currently defining the state of the art.
+A curated index of AI agent frameworks, security tools, and autonomous workflows for 2026. Covers offensive security, OSINT, coding assistants, and emerging protocols — with honest technical assessments.
 
-Whether you are building distributed systems with Directed Cyclic Graphs (DCGs), configuring container-isolated coding environments, or implementing tensor ablations for red-teaming tasks, this repository serves as a pragmatic, highly technical compass. We prioritize execution capability over hype, focusing strictly on tools that provide tangible operational parity with human counterparts in complex workflows.
-
+> [!TIP]
+> ➕ Know a tool that should be here? [Add it via PR](CONTRIBUTING.md) or [open an issue](https://github.com/frangelbarrera/awesome-ai-agents/issues).
 ---
 
 ## 📖 Glossary
@@ -32,18 +32,21 @@ To ensure clarity across all repository tables, we classify tools using the foll
 5. [OSINT (Open Source Intelligence)](#5-osint-open-source-intelligence)
 6. [PC Control and Desktop Automation](#6-pc-control-and-desktop-automation)
 7. [Uncensored Models and Jailbreak](#7-uncensored-models-and-jailbreak)
-8. [Advanced Guides, Tips, and Prompts](#8-advanced-guides-tips-and-prompts)
-9. [GitLab and Corporate Projects](#9-gitlab-and-corporate-projects)
-10. [Agent Directories and Marketplaces](#10-agent-directories-and-marketplaces)
-11. [Specialized Agents](#11-specialized-agents)
-12. [Memory and Persistence for Agents](#12-memory-and-persistence-for-agents)
-13. [Evaluation Benchmarks](#13-evaluation-benchmarks)
-14. [Simulations of Societies and Virtual Worlds](#14-simulations-of-societies-and-virtual-worlds)
-15. [Security, Guardrails, and Alignment](#15-security-guardrails-and-alignment)
-16. [Edge and Local AI Agents (Mobile/IoT)](#16-edge-and-local-ai-agents-mobileiot)
-17. [Web3 and Crypto Agents](#17-web3-and-crypto-agents)
-18. [Voice and Real-Time Audio Agents](#18-voice-and-real-time-audio-agents)
-19. [Data Engineering and Analytics Agents](#19-data-engineering-and-analytics-agents)
+8. [Protocols and Standards](#8-protocols-and-standards)
+9. [Observability and Evaluation](#9-observability-and-evaluation)
+10. [Local and Self-Hosted AI Agents](#10-local-and-self-hosted-ai-agents)
+11. [Advanced Guides, Tips, and Prompts](#11-advanced-guides-tips-and-prompts)
+12. [Enterprise and CI/CD Agents](#12-enterprise-and-cicd-agents)
+13. [Agent Directories and Marketplaces](#13-agent-directories-and-marketplaces)
+14. [Specialized Agents](#14-specialized-agents)
+15. [Memory and Persistence for Agents](#15-memory-and-persistence-for-agents)
+16. [Evaluation Benchmarks](#16-evaluation-benchmarks)
+17. [Simulations of Societies and Virtual Worlds](#17-simulations-of-societies-and-virtual-worlds)
+18. [Security, Guardrails, and Alignment](#18-security-guardrails-and-alignment)
+19. [Edge and Local AI Agents (Mobile/IoT)](#19-edge-and-local-ai-agents-mobileiot)
+20. [Web3 and Crypto Agents](#20-web3-and-crypto-agents)
+21. [Voice and Real-Time Audio Agents](#21-voice-and-real-time-audio-agents)
+22. [Data Engineering and Analytics Agents](#22-data-engineering-and-analytics-agents)
 
 ---
 
@@ -156,7 +159,45 @@ Red Teaming, filter evasion, and tensor alteration in base models.
 
 ---
 
-## 8. Advanced Guides, Tips, and Prompts
+## 8. Protocols and Standards
+Interoperability protocols, tool-use specifications, and agent communication standards.
+
+| Repository | Description | Stack | Engine | Deployment | Link |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **MCP (Model Context Protocol)** | Open standard by Anthropic for connecting AI models to external tools, data sources, and services via a JSON-RPC protocol. | TypeScript/Python | Hybrid | Library | [Link](https://github.com/modelcontextprotocol) |
+| **A2A (Agent-to-Agent)** | Google's open protocol enabling inter-agent communication and task delegation across heterogeneous agent frameworks. | Python | Hybrid | Library | [Link](https://github.com/google/A2A) |
+| **Agent Protocol** | Unified API standard by AI Engineer Foundation defining a consistent REST interface for agent creation, execution, and task management. | Python/TS | N/A | Library | [Link](https://github.com/AI-Engineer-Foundation/AgentProtocol) |
+| **OpenAI Realtime API** | WebSocket-based specification for low-latency streaming audio and multimodal agent interactions. | Python/TS | API-based | API | [Link](https://platform.openai.com/docs/api-reference/realtime) |
+| **LangChain Tool Standard** | Standardized tool interface allowing cross-framework tool sharing between LangChain, CrewAI, AutoGen, and other agent runtimes. | Python/TS | Hybrid | Library | [Link](https://python.langchain.com/docs/concepts/tools/) |
+
+---
+
+## 9. Observability and Evaluation
+Tracing, monitoring, and debugging agent executions in production.
+
+| Repository | Description | Stack | Engine | Deployment | Link |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Langfuse** | Open-source LLM observability platform tracing agent runs, prompt versions, and cost metrics with self-hosted option. | TypeScript/Python | API-based | Web UI | [Link](https://github.com/langfuse/langfuse) |
+| **LangSmith** | LangChain's native tracing and evaluation platform for debugging multi-step agent pipelines and regression testing. | Python/TS | API-based | Web UI | [Link](https://github.com/langchain-ai/langsmith-sdk) |
+| **Arize Phoenix** | Open-source AI observability engine for tracing LLM calls, evaluating RAG quality, and detecting hallucinations. | Python | Local Inference | Jupyter | [Link](https://github.com/Arize-ai/phoenix) |
+| **Helicone** | Open-source proxy layer logging LLM requests with caching, rate limiting, and cost analytics dashboards. | TypeScript | API-based | Web UI | [Link](https://github.com/Helicone/helicone) |
+| **Braintrust** | Evaluation framework for scoring agent outputs against golden datasets with automatic regression detection. | TypeScript | API-based | Web UI | [Link](https://github.com/braintrustdata/braintrust-sdk) |
+
+---
+
+## 10. Local and Self-Hosted AI Agents
+Privacy-first agents running entirely on local hardware without cloud API dependencies.
+
+| Repository | Description | Stack | Engine | Deployment | Link |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Ollama** | Lightweight daemon serving quantized LLMs locally with a REST API and model management for agent backends. | Go/C++ | Local Inference | CLI | [Link](https://github.com/ollama/ollama) |
+| **Jan** | Desktop application running local LLMs with an embedded agent runtime and GPU-accelerated inference. | TypeScript/C++ | Local Inference | App/Web | [Link](https://github.com/janhq/jan) |
+| **LocalAI** | Drop-in OpenAI-compatible API server running on CPU/GPU with model quantization and function calling support. | Go/Python | Local Inference | Docker | [Link](https://github.com/mudler/LocalAI) |
+| **LM Studio** | Desktop GUI for discovering, downloading, and running local LLMs with agent-compatible chat completions API. | TypeScript/C++ | Local Inference | App/Web | [Link](https://lmstudio.ai/) |
+| **llama.cpp** | Minimal C/C++ inference engine for running LLaMA models on consumer hardware with GGUF quantization. | C/C++ | Local Inference | CLI | [Link](https://github.com/ggml-org/llama.cpp) |
+
+---
+## 11. Advanced Guides, Tips, and Prompts
 Context architecture, design manuals, and additional directories.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -172,8 +213,8 @@ Context architecture, design manuals, and additional directories.
 
 ---
 
-## 9. GitLab and Corporate Projects
-Tools focused on DevSecOps and enterprise pipeline governance.
+## 12. Enterprise and CI/CD Agents
+Agents integrated into enterprise pipelines, DevSecOps workflows, and corporate infrastructure.
 
 | Project | Description | Stack | Engine | Deployment | Link |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -185,7 +226,7 @@ Tools focused on DevSecOps and enterprise pipeline governance.
 
 ---
 
-## 10. Agent Directories and Marketplaces
+## 13. Agent Directories and Marketplaces
 Portals to compare frameworks and hosted agents.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -193,10 +234,12 @@ Portals to compare frameworks and hosted agents.
 | **AI Agents Directory** | Categorized index of +1,300 utilities. | Web | N/A | Web UI | [Link](https://aiagentsdirectory.com/) |
 | **AI Agents List** | Feature and pricing evaluation of +600 software solutions. | Web | N/A | Web UI | [Link](https://aiagentslist.com/) |
 | **Hugging Face Agents** | Native integration and validated list of autonomous models. | Web | N/A | Web UI | [Link](https://huggingface.co/blog/tegridydev/open-source-ai-agents-directory) |
+| **Glama MCP Directory** | Curated directory of MCP servers and AI agent tools with real-time availability checks. | Web | N/A | Web UI | [Link](https://glama.ai/mcp/servers) |
+| **Smithery** | Agent tool registry and marketplace enabling one-click installation of MCP-compatible agent extensions. | Web | N/A | Web UI | [Link](https://smithery.ai/) |
 
 ---
 
-## 11. Specialized Agents
+## 14. Specialized Agents
 Optimized semantic processing for professional and regulated fields.
 
 ### Finance and Investment
@@ -222,7 +265,7 @@ Optimized semantic processing for professional and regulated fields.
 
 ---
 
-## 12. Memory and Persistence for Agents
+## 15. Memory and Persistence for Agents
 Semantic hypervectorial storage persisting across context limitations.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -235,7 +278,7 @@ Semantic hypervectorial storage persisting across context limitations.
 
 ---
 
-## 13. Evaluation Benchmarks
+## 16. Evaluation Benchmarks
 Parameterized sets of cases for deterministic measurement.
 
 | Benchmark | Description | Stack | Engine | Deployment | Link |
@@ -247,7 +290,7 @@ Parameterized sets of cases for deterministic measurement.
 
 ---
 
-## 14. Simulations of Societies and Virtual Worlds
+## 17. Simulations of Societies and Virtual Worlds
 Experimentation on autonomous group behaviors by unifying multiple LLMs.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -260,7 +303,7 @@ Experimentation on autonomous group behaviors by unifying multiple LLMs.
 
 ---
 
-## 15. Security, Guardrails, and Alignment
+## 18. Security, Guardrails, and Alignment
 Frameworks and pipelines designed to enforce policy constraints, prevent prompt injections, and align autonomous agents to specific safety protocols.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -272,7 +315,7 @@ Frameworks and pipelines designed to enforce policy constraints, prevent prompt 
 
 ---
 
-## 16. Edge and Local AI Agents (Mobile/IoT)
+## 19. Edge and Local AI Agents (Mobile/IoT)
 Small language models (SLMs) and pruned tensors optimized natively for device-edge execution on resource-constrained hardware.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -283,7 +326,7 @@ Small language models (SLMs) and pruned tensors optimized natively for device-ed
 
 ---
 
-## 17. Web3 and Crypto Agents
+## 20. Web3 and Crypto Agents
 Autonomous financial agents interacting natively with blockchain nodes, executing deterministic EVM smart contracts, or trading autonomously.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -291,10 +334,12 @@ Autonomous financial agents interacting natively with blockchain nodes, executin
 | **Eliza** | Specialized multi-agent framework tailored for interacting with crypto endpoints, executing DeFi operations, and orchestrating decentralized DAOs. | TypeScript | Hybrid | Node | [Link](https://github.com/elizaOS/eliza) |
 | **Rig** | Rust-native ecosystem building secure Web3 agents capable of deterministic contract execution and complex state transitions. | Rust | Hybrid | Node | [Link](https://github.com/0xPlaygrounds/rig) |
 | **Goat** | The Great Open Agent Toolkit. Middleware connecting off-chain AI reasoning with on-chain EVM transactional networks. | TypeScript | Hybrid | Web UI | [Link](https://github.com/goat-sdk/goat) |
+| **Spectral** | On-chain autonomous agent framework executing DeFi strategies with verifiable transaction logs. | Solidity/Python | Hybrid | Web UI | [Link](https://github.com/Spectral-Finance) |
+| **OLAS** | Open-source framework for deploying autonomous off-chain agents that interact with smart contracts and DAOs. | Python | Hybrid | Docker | [Link](https://github.com/valory-xyz/open-autonomy) |
 
 ---
 
-## 18. Voice and Real-Time Audio Agents
+## 21. Voice and Real-Time Audio Agents
 Frameworks and pipelines optimized for low-latency voice-to-voice communication, streaming speech recognition, and synthesized audio reasoning.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -302,10 +347,12 @@ Frameworks and pipelines optimized for low-latency voice-to-voice communication,
 | **Pipecat** | Open-source framework for building voice and multimodal conversational agents featuring WebRTC bindings and streaming VAD. | Python/TS | API-based | Web/Node | [Link](https://github.com/pipecat-ai/pipecat) |
 | **LiveKit Agents** | High-performance infrastructure explicitly designed to host real-time programmable audio agents over globally distributed WebRTC meshes. | Go/Python | API-based | SDK | [Link](https://github.com/livekit/agents) |
 | **Vapi** | End-to-end voice AI platform abstraction allowing integration of interrupting, context-aware audio agents natively via SIP/WebRTC. | TypeScript | API-based | Web/App | [Link](https://github.com/VapiAI) |
+| **OmniChat** | Real-time voice agent framework supporting full-duplex audio with interruption handling and emotion detection. | Python | API-based | Docker | [Link](https://github.com/opengvlab/omnichat) |
+| **Retell AI** | Voice agent API with turn-taking logic, keyword detection, and custom voice cloning for agent personas. | TypeScript | API-based | API | [Link](https://github.com/RetellAI) |
 
 ---
 
-## 19. Data Engineering and Analytics Agents
+## 22. Data Engineering and Analytics Agents
 Automated systems that ingest chaotic data environments, generate complex SQL/Python transformations, and auto-orchestrate ETL pipelines.
 
 | Repository | Description | Stack | Engine | Deployment | Link |
@@ -313,10 +360,14 @@ Automated systems that ingest chaotic data environments, generate complex SQL/Py
 | **Dataherald** | Natural Language-to-SQL engine constructed over relational databases, supporting RAG-style schema alignment and determinism. | Python | Hybrid | Web UI | [Link](https://github.com/Dataherald/dataherald) |
 | **PandasAI** | Conversational data analysis library that allows users to interact with their databases and dataframes using natural language. | Python | API-based | Jupyter | [Link](https://github.com/sinaptik-ai/pandas-ai) |
 | **LlamaIndex** | Though a data framework, its Agentic Data Engines autonomously route, synthesis, and query disparate vector and SQL nodes. | Python/TS | Hybrid | Library | [Link](https://github.com/run-llama/llama_index) |
+| **Datamatic** | Autonomous ETL agent that inspects data schemas, generates transformation code, and validates pipeline outputs. | Python | API-based | Web UI | [Link](https://github.com/datamatic-ai) |
+| **BlazeSQL** | Natural language to SQL agent supporting multiple database engines with query optimization and schema learning. | Python | API-based | Web UI | [Link](https://github.com/blazesql) |
 | **AI for Database** | Agentic AI that connects to any database (Postgres, MySQL, MongoDB) and enables natural language querying, self-refreshing dashboards, and workflow automation. | SaaS | Hybrid | Web UI | [Link](https://aifordatabase.com) |
 
 ---
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! We encourage the community to submit Pull Requests to expand this repository. If you have a tool or repository to suggest, please ensure it aligns with the high technical standard and format of the existing tables (specifying Stack, Engine, and Deployment accurately).
 
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) for format requirements and submission guidelines.
+
+**Quick start:** Fork → Add tool to correct section → Verify link → Submit PR
