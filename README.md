@@ -362,6 +362,7 @@ Automated systems that ingest chaotic data environments, generate complex SQL/Py
 | **LlamaIndex** | Though a data framework, its Agentic Data Engines autonomously route, synthesis, and query disparate vector and SQL nodes. | Python/TS | Hybrid | Library | [Link](https://github.com/run-llama/llama_index) |
 | **Datamatic** | Autonomous ETL agent that inspects data schemas, generates transformation code, and validates pipeline outputs. | Python | API-based | Web UI | [Link](https://github.com/datamatic-ai) |
 | **BlazeSQL** | Natural language to SQL agent supporting multiple database engines with query optimization and schema learning. | Python | API-based | Web UI | [Link](https://github.com/blazesql) |
+| **AI for Database** | Agentic AI that connects to any database (Postgres, MySQL, MongoDB) and enables natural language querying, self-refreshing dashboards, and workflow automation. | SaaS | Hybrid | Web UI | [Link](https://aifordatabase.com) |
 
 ---
 
